@@ -1,0 +1,29 @@
+================================================================================
+Experiment 20: Bias-Variance Tradeoff using Polynomial Regression
+================================================================================
+
+AIM:
+Investigate the bias-variance tradeoff using polynomial regression on housing price data. Plot training and validation errors for various polynomial degrees (1 to 5) and discuss the tradeoff between bias and variance.
+
+ALGORITHM / PROCEDURE:
+Step 1: Load housing dataset (Boston housing or California housing) and extract single representative feature.
+Step 2: Split data into 80% training and 20% validation sets.
+Step 3: For polynomial degrees 1 through 5:
+   - Create Pipeline with StandardScaler, PolynomialFeatures(degree), and LinearRegression.
+   - Fit pipeline on training data.
+   - Predict training and validation sets.
+   - Compute Training MSE (Bias indicator) and Validation MSE (Variance indicator).
+Step 4: Plot Training Error and Validation Error curves vs Polynomial Degree. Save to biasvariance_plot.png.
+Step 5: Identify underfitting regime (high bias, low variance), optimal model complexity, and overfitting regime (low bias, high variance).
+
+SAMPLE OUTPUT / METRICS:
+Degree | Training MSE | Validation MSE
+--------------------------------------
+   1   |      21.6410 |      24.1250
+   2   |      15.2340 |      16.8910
+   3   |      14.8920 |      16.4520
+   4   |      14.7100 |      16.7800
+   5   |      14.5200 |      17.2100
+
+Plot saved successfully to 'biasvariance_plot.png'.
+

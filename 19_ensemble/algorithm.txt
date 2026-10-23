@@ -1,0 +1,30 @@
+================================================================================
+Experiment 19: Bagging and Boosting Ensemble Methods on Titanic Dataset
+================================================================================
+
+AIM:
+Implement bagging and boosting ensemble methods on the Titanic dataset. Compare the performance of both methods in terms of accuracy, precision, recall, and F1-score. Discuss how each method improves model performance and their respective strengths and weaknesses.
+
+ALGORITHM / PROCEDURE:
+Step 1: Load Titanic dataset ('Titanic.csv').
+Step 2: Preprocess data:
+   - Drop high-missing / identifier columns: 'Cabin', 'Name', 'Ticket', 'PassengerId'.
+   - Impute missing Age with median, Embarked with mode.
+   - Encode categorical columns 'Sex' and 'Embarked' with LabelEncoder.
+Step 3: Separate features X and survival target y. Split into 80% train and 20% test sets.
+Step 4: Implement Bagging Classifier:
+   - Use BaggingClassifier with DecisionTreeClassifier() as base estimator (n_estimators=50).
+   - Train, predict test set, evaluate metrics.
+Step 5: Implement Boosting Classifier:
+   - Use AdaBoostClassifier with shallow DecisionTreeClassifier(max_depth=1) as base estimator (n_estimators=50).
+   - Train, predict test set, evaluate metrics.
+Step 6: Display comparison table of Accuracy, Precision, Recall, and F1-score.
+
+SAMPLE OUTPUT / METRICS:
+--- Ensemble Methods Comparison on Titanic Dataset ---
+   Metric  Bagging (Random Forest-style)  AdaBoost (Boosting)
+ Accuracy                         0.8268               0.8101
+Precision                         0.8030               0.7761
+   Recall                         0.7465               0.7324
+ F1 Score                         0.7737               0.7536
+

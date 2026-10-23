@@ -1,0 +1,5 @@
+--- Clustering Evaluation (Silhouette Score) ---
+K-Means Clustering:       0.5539
+Agglomerative Clustering: 0.5530
+
+Plot saved successfully to 'clustering_plot.png'.

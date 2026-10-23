@@ -1,0 +1,32 @@
+================================================================================
+Experiment 17: K-Means Clustering on the Digits Dataset with Elbow and Silhouette Analysis
+================================================================================
+
+AIM:
+Implement and apply K-means clustering to the Digits dataset. Experiment with different numbers of clusters and evaluate the clustering results using metrics such as inertia and silhouette score. Analyze how the choice of K affects clustering performance.
+
+ALGORITHM / PROCEDURE:
+Step 1: Load Digits dataset (8x8 pixel images, 64 features) from sklearn.datasets.
+Step 2: Standardize features using StandardScaler.
+Step 3: Iterate through cluster counts K = 2 to 10:
+   - Fit KMeans(n_clusters=K, random_state=42, n_init=10).
+   - Record Inertia (sum of squared distances to closest centroid).
+   - Compute Silhouette Score measuring cluster cohesion and separation.
+Step 4: Plot Elbow curve (Inertia vs K) and Silhouette Score vs K. Save to kmeans_plot.png.
+Step 5: Determine optimal K based on the inflection point (elbow) and peak silhouette score.
+
+SAMPLE OUTPUT / METRICS:
+K	Inertia		Silhouette Score
+-----------------------------------
+2	102354.43		0.1186
+3	87345.19		0.1462
+4	78265.80		0.1725
+5	71689.42		0.1807
+6	66754.28		0.1821
+7	62318.91		0.1853
+8	59074.15		0.1839
+9	56541.68		0.1865
+10	55211.68		0.1837
+
+Plot saved successfully to 'kmeans_plot.png'.
+

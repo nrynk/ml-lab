@@ -1,0 +1,16 @@
+Loading Fashion MNIST dataset...
+K =  1 | Accuracy: 0.7960 | F1: 0.7981 | Time: 0.27s
+K =  3 | Accuracy: 0.8160 | F1: 0.8156 | Time: 0.20s
+K =  5 | Accuracy: 0.8120 | F1: 0.8116 | Time: 0.17s
+K =  7 | Accuracy: 0.8120 | F1: 0.8115 | Time: 0.17s
+K =  9 | Accuracy: 0.8210 | F1: 0.8212 | Time: 0.16s
+
+--- KNN Classification Performance Summary ---
+ K  Accuracy  Precision  Recall  F1 Score  Time (s)
+ 1     0.796     0.8034   0.796    0.7981      0.27
+ 3     0.816     0.8214   0.816    0.8156      0.20
+ 5     0.812     0.8165   0.812    0.8116      0.17
+ 7     0.812     0.8166   0.812    0.8115      0.17
+ 9     0.821     0.8268   0.821    0.8212      0.16
+
+Plot saved successfully to 'knn_plot.png'.

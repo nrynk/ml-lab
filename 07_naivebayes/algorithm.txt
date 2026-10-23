@@ -1,0 +1,26 @@
+================================================================================
+Experiment 7: Text Classification using Multinomial Naïve Bayes and Bernoulli Naïve Bayes on 20 Newsgroups Dataset
+================================================================================
+
+AIM:
+To implement a Naïve Bayes classifier to categorize text documents into topics using the 20 Newsgroups dataset, compare the performance of Multinomial Naïve Bayes with Bernoulli Naïve Bayes, and evaluate them using Accuracy and F1-score.
+
+ALGORITHM / PROCEDURE:
+Step 1: Load 20 Newsgroups dataset with 4 categories (talk.religion.misc, soc.religion.christian, sci.space, comp.graphics).
+Step 2: Split data into training and test sets.
+Step 3: Multinomial Naive Bayes Pipeline:
+   - Transform text into word-frequency vectors using CountVectorizer(stop_words='english').
+   - Fit MultinomialNB() classifier.
+   - Predict test set, calculate Accuracy and weighted F1-Score.
+Step 4: Bernoulli Naive Bayes Pipeline:
+   - Transform text into binary occurrence vectors using CountVectorizer(stop_words='english', binary=True).
+   - Fit BernoulliNB() classifier.
+   - Predict test set, calculate Accuracy and weighted F1-Score.
+Step 5: Compare both models and discuss word-frequency vs binary presence features.
+
+SAMPLE OUTPUT / METRICS:
+--- Naive Bayes Classifier Comparison ---
+                  Model       Feature Representation  Accuracy  F1 Score (Weighted)
+Multinomial Naive Bayes    Word Frequencies (Counts)    0.7852               0.7781
+  Bernoulli Naive Bayes   Binary Word Presence (0/1)    0.6934               0.6845
+

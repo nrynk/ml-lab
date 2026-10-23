@@ -1,0 +1,22 @@
+Loading Fashion MNIST dataset for hyperparameter tuning...
+
+Running Hyperparameter Tuning Grid Search:
+LR= 0.0010 | Batch=32 | Epochs=10 -> Accuracy: 83.30% (5.1s)
+LR= 0.0010 | Batch=32 | Epochs=20 -> Accuracy: 83.80% (9.6s)
+LR= 0.0010 | Batch=64 | Epochs=10 -> Accuracy: 84.40% (3.1s)
+LR= 0.0010 | Batch=64 | Epochs=20 -> Accuracy: 84.90% (6.3s)
+LR= 0.0100 | Batch=32 | Epochs=10 -> Accuracy: 81.30% (5.4s)
+LR= 0.0100 | Batch=32 | Epochs=20 -> Accuracy: 82.30% (10.9s)
+LR= 0.0100 | Batch=64 | Epochs=10 -> Accuracy: 82.50% (3.0s)
+LR= 0.0100 | Batch=64 | Epochs=20 -> Accuracy: 81.10% (5.8s)
+
+--- Hyperparameter Tuning Results (Ranked by Accuracy) ---
+ Learning Rate  Batch Size  Epochs  Accuracy (%)  Time (s)
+         0.001          64      20          84.9      6.30
+         0.001          64      10          84.4      3.05
+         0.001          32      20          83.8      9.61
+         0.001          32      10          83.3      5.11
+         0.010          64      10          82.5      3.00
+         0.010          32      20          82.3     10.93
+         0.010          32      10          81.3      5.39
+         0.010          64      20          81.1      5.83

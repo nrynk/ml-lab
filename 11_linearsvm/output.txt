@@ -1,0 +1,16 @@
+Linear SVM Accuracy: 1.0
+
+Classification Report:
+              precision    recall  f1-score   support
+
+      Setosa       1.00      1.00      1.00        50
+  Versicolor       1.00      1.00      1.00        50
+
+    accuracy                           1.00       100
+
+Weight Vector w: [2.0464, -2.7153]
+Intercept b:     -0.7891
+Margin Width:    0.5881
+Number of Support Vectors: 4
+
+Plot saved successfully to 'linearsvm_plot.png'.

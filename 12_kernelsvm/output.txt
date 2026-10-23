@@ -1,0 +1,9 @@
+[Linear] Accuracy: 81.60% | Time: 1.85s
+[Polynomial (deg=3)] Accuracy: 81.90% | Time: 2.12s
+[RBF] Accuracy: 84.80% | Time: 2.30s
+
+--- SVM Kernel Performance Comparison ---
+       Kernel Type  Accuracy  Precision  Recall  F1 Score  Time (s)
+            Linear     0.816     0.8182   0.816    0.8164      1.85
+Polynomial (deg=3)     0.819     0.8245   0.819    0.8180      2.12
+               RBF     0.848     0.8491   0.848    0.8475      2.30

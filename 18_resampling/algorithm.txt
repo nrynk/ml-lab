@@ -1,0 +1,37 @@
+================================================================================
+Experiment 18: Bootstrapping and Cross-Validation on Iris Dataset
+================================================================================
+
+AIM:
+Implement bootstrapping and cross-validation on the Iris dataset. Compare the model performance metrics (accuracy, F1-score) obtained using these resampling methods. Discuss the advantages and disadvantages of each method.
+
+ALGORITHM / PROCEDURE:
+Part A: Bootstrapping with Out-Of-Bag (OOB) Testing
+Step 1: For each of 10 iterations:
+   - Generate bootstrap sample with replacement: (X_boot, y_boot).
+   - Identify unpicked out-of-bag (OOB) samples as test set: (X_test, y_test).
+   - Fit DecisionTreeClassifier(random_state=42) on bootstrap training set.
+   - Predict OOB test set, compute Accuracy and weighted F1-score.
+Step 2: Compute mean Bootstrapping Accuracy and F1-score.
+
+Part B: 5-Fold Cross-Validation
+Step 1: Partition dataset into 5 equal folds using KFold(n_splits=5, shuffle=True, random_state=42).
+Step 2: For each fold, hold out fold as test set and train on remaining 4 folds.
+Step 3: Predict test set, record Accuracy and weighted F1-score.
+Step 4: Compute mean 5-Fold Cross-Validation Accuracy and F1-score.
+Step 5: Compare resampling methods regarding bias, variance, and sample reuse.
+
+SAMPLE OUTPUT / METRICS:
+--- Bootstrapping Results (10 Iterations) ---
+Average Accuracy : 0.9452
+Average F1 Score : 0.9450
+
+--- 5-Fold Cross-Validation Results ---
+Average Accuracy : 0.9533
+Average F1 Score : 0.9533
+
+--- Summary Comparison ---
+                 Method  Average Accuracy  Average F1 Score
+    Bootstrapping (OOB)            0.9452            0.9450
+5-Fold Cross-Validation            0.9533            0.9533
+

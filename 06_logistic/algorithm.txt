@@ -1,0 +1,25 @@
+================================================================================
+Experiment 6: Logistic Regression for Disease Prediction using Pima Indians Diabetes Dataset
+================================================================================
+
+AIM:
+To implement a Logistic Regression model for predicting the likelihood of diabetes using the Pima Indians Diabetes dataset and compare the model performance with and without feature scaling.
+
+ALGORITHM / PROCEDURE:
+Step 1: Load the Pima Indians Diabetes dataset ('pima-indians-diabetes.csv').
+Step 2: Replace biological zero values with NaN for columns [Glucose, BloodPressure, SkinThickness, Insulin, BMI] and impute with column median.
+Step 3: Separate features X and binary target y ('Outcome').
+Step 4: Split data into 80% train and 20% test sets.
+Step 5: Train Logistic Regression model WITHOUT feature scaling. Evaluate Accuracy, Precision, Recall, F1-Score.
+Step 6: Standardize features using StandardScaler (fit on train, transform on test).
+Step 7: Train Logistic Regression model WITH feature scaling. Evaluate Accuracy, Precision, Recall, F1-Score.
+Step 8: Compare metrics in an observation table and analyze the impact of feature scaling.
+
+SAMPLE OUTPUT / METRICS:
+--- Performance Comparison: Impact of Feature Scaling ---
+   Metric  Without Scaling  With Scaling
+ Accuracy           0.7662        0.7727
+Precision           0.6863        0.6939
+   Recall           0.6364        0.6182
+ F1 Score           0.6604        0.6538
+

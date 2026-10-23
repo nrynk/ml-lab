@@ -1,0 +1,6 @@
+--- Performance Comparison: Logistic Regression vs Decision Tree ---
+   Metric  Logistic Regression  Decision Tree (depth=5)
+ Accuracy               0.8241                   0.8512
+Precision               0.7214                   0.7845
+   Recall               0.4632                   0.5341
+ F1 Score               0.5641                   0.6354

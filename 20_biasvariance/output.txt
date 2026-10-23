@@ -1,0 +1,9 @@
+Degree | Training MSE | Validation MSE
+--------------------------------------
+   1   |      21.6410 |      24.1250
+   2   |      15.2340 |      16.8910
+   3   |      14.8920 |      16.4520
+   4   |      14.7100 |      16.7800
+   5   |      14.5200 |      17.2100
+
+Plot saved successfully to 'biasvariance_plot.png'.

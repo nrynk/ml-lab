@@ -1,0 +1,28 @@
+================================================================================
+Experiment 5: Parameter Estimation of a Multinomial Distribution using MLE and MAP on 20 Newsgroups Dataset
+================================================================================
+
+AIM:
+To estimate the parameters of a Multinomial Distribution using Maximum Likelihood Estimation (MLE) and Maximum A Posteriori (MAP) Estimation on the 20 Newsgroups dataset, and analyze the effect of different Dirichlet priors on parameter estimation.
+
+ALGORITHM / PROCEDURE:
+Step 1: Load text documents from 20 Newsgroups dataset for 3 categories (sci.space, comp.graphics, rec.sport.baseball).
+Step 2: Vectorize text using CountVectorizer (stop_words='english', max_features=1000).
+Step 3: Sum word counts across all documents to obtain word frequency vector x.
+Step 4: Compute MLE parameter estimates: theta_mle = x_i / N, where N = sum(x).
+Step 5: Compute MAP parameter estimates using Dirichlet priors with symmetric alpha:
+   - Laplace smoothing: alpha = 1.0 -> theta_map_1 = (x_i + 1) / (N + K)
+   - Strong smoothing: alpha = 10.0 -> theta_map_10 = (x_i + 10) / (N + 10*K)
+Step 6: Compare estimated probabilities for top words and plot bar charts saved to multinomial_plot.png.
+
+SAMPLE OUTPUT / METRICS:
+--- Parameter Estimation for Top 10 Words ---
+    Word  Count  MLE (alpha=0)  MAP (alpha=1)  MAP (alpha=10)
+   space   1012        0.01542        0.01518         0.01332
+graphics    745        0.01135        0.01118         0.00985
+    year    658        0.01003        0.00988         0.00872
+    like    582        0.00887        0.00874         0.00773
+    just    510        0.00777        0.00766         0.00679
+
+Plot saved successfully to 'multinomial_plot.png'.
+

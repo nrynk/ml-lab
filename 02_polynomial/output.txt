@@ -1,0 +1,17 @@
+--- Linear Regression ---
+MSE:      21.4490
+R2 Score: 0.6482
+
+Polynomial Degree = 2
+MSE:      19.0681
+R2 Score: 0.6872
+
+Polynomial Degree = 3
+MSE:      18.9958
+R2 Score: 0.6884
+
+Polynomial Degree = 4
+MSE:      18.8471
+R2 Score: 0.6908
+
+Plot saved successfully to 'polynomial_plot.png'.

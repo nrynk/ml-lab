@@ -1,0 +1,6 @@
+--- Ensemble Methods Comparison on Titanic Dataset ---
+   Metric  Bagging (Random Forest-style)  AdaBoost (Boosting)
+ Accuracy                         0.8268               0.8101
+Precision                         0.8030               0.7761
+   Recall                         0.7465               0.7324
+ F1 Score                         0.7737               0.7536

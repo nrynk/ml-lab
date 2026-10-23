@@ -1,0 +1,12 @@
+--- Gradient Descent Results ---
+Intercept (theta0): 2.0686
+Slope (theta1):     0.3182
+MSE:                1.2789
+R2 Score:           0.0238
+
+--- Normal Equation Results ---
+Theta Values (Intercept, Slope): [1.7495, 0.0676]
+MSE:                             1.2783
+R2 Score:                        0.0243
+
+Plot saved successfully to 'linear_plot.png'.

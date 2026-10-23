@@ -1,0 +1,33 @@
+================================================================================
+Experiment 11: Linear Support Vector Machine (SVM) to Classify the Iris Dataset
+================================================================================
+
+AIM:
+Implement a Linear Support Vector Machine (SVM) to classify the Iris dataset. Visualize the decision boundary, support vectors, and discuss how the margin is determined.
+
+ALGORITHM / PROCEDURE:
+Step 1: Load Iris dataset from sklearn.datasets.
+Step 2: Select first two features (Sepal length, Sepal width) and binary classes 0 and 1 (Setosa and Versicolor).
+Step 3: Fit Linear SVM using SVC(kernel='linear', C=1.0).
+Step 4: Identify support vectors and extract model weights (w) and intercept (b).
+Step 5: Compute margin width: Margin = 2 / ||w||.
+Step 6: Plot decision boundary (w0*x0 + w1*x1 + b = 0) and margins (+1 and -1 lines) alongside support vectors. Save to linearsvm_plot.png.
+
+SAMPLE OUTPUT / METRICS:
+Linear SVM Accuracy: 1.0
+
+Classification Report:
+              precision    recall  f1-score   support
+
+      Setosa       1.00      1.00      1.00        50
+  Versicolor       1.00      1.00      1.00        50
+
+    accuracy                           1.00       100
+
+Weight Vector w: [2.0464, -2.7153]
+Intercept b:     -0.7891
+Margin Width:    0.5881
+Number of Support Vectors: 4
+
+Plot saved successfully to 'linearsvm_plot.png'.
+

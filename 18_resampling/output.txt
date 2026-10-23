@@ -1,0 +1,12 @@
+--- Bootstrapping Results (10 Iterations) ---
+Average Accuracy : 0.9452
+Average F1 Score : 0.9450
+
+--- 5-Fold Cross-Validation Results ---
+Average Accuracy : 0.9533
+Average F1 Score : 0.9533
+
+--- Summary Comparison ---
+                 Method  Average Accuracy  Average F1 Score
+    Bootstrapping (OOB)            0.9452            0.9450
+5-Fold Cross-Validation            0.9533            0.9533

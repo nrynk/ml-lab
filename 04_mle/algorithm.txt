@@ -1,0 +1,28 @@
+================================================================================
+Experiment 4: Logistic Regression using MLE and MAP on Breast Cancer Wisconsin Dataset
+================================================================================
+
+AIM:
+To estimate the parameters of a Logistic Regression model using Maximum Likelihood Estimation (MLE) and Maximum A Posteriori (MAP) Estimation on the Breast Cancer Wisconsin dataset, and analyze the effect of L1 and L2 penalties.
+
+ALGORITHM / PROCEDURE:
+Step 1: Load Breast Cancer dataset from sklearn.datasets.load_breast_cancer.
+Step 2: Standardize features using StandardScaler. Split into 80% train and 20% test.
+Step 3: Maximum Likelihood Estimation (MLE):
+   - Fit LogisticRegression with penalty=None (or very large C) representing unregularized likelihood maximization.
+   - Predict test set, record Accuracy, Precision, Recall, F1-Score.
+Step 4: Maximum A Posteriori (MAP with Gaussian Prior - L2 Regularization):
+   - Fit LogisticRegression with penalty='l2' and C=1.0.
+   - Record evaluation metrics.
+Step 5: Maximum A Posteriori (MAP with Laplace Prior - L1 Regularization):
+   - Fit LogisticRegression with penalty='l1', solver='liblinear', and C=1.0.
+   - Record evaluation metrics and observe sparse weights.
+Step 6: Display observation table comparing MLE vs MAP (L1 and L2).
+
+SAMPLE OUTPUT / METRICS:
+--- Parameter Estimation Performance Comparison ---
+       Estimation Method  Accuracy  Precision   Recall  F1 Score
+     MLE (Unregularized)  0.956140   0.971831 0.958333  0.965035
+MAP (L2 - Gaussian Prior)  0.973684   0.972222 0.985915  0.979021
+ MAP (L1 - Laplace Prior)  0.964912   0.971831 0.971831  0.971831
+

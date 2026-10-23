@@ -1,0 +1,44 @@
+================================================================================
+Experiment 1: Linear Regression with One Variable on California Housing Dataset
+================================================================================
+
+AIM:
+To implement Linear Regression with one independent variable using the California Housing dataset and predict housing prices based on the average number of rooms per dwelling (AveRooms) using:
+1. Gradient Descent
+2. Normal Equation
+and evaluate the model using Mean Squared Error (MSE) and R² Score.
+
+ALGORITHM / PROCEDURE:
+Method 1: Linear Regression using Gradient Descent
+Step 1: Import required libraries (numpy, pandas, matplotlib, sklearn).
+Step 2: Load the California Housing dataset using fetch_california_housing.
+Step 3: Select Feature (X): Average number of rooms (AveRooms), Target (y): Median house value.
+Step 4: Normalize the feature values using StandardScaler for faster convergence.
+Step 5: Initialize parameters: theta0 (bias), theta1 (slope), learning_rate (0.01), iterations (1000).
+Step 6: Repeat until convergence:
+   - Compute predictions: y_pred = theta0 + theta1 * X
+   - Compute gradients: d_theta0 = (1/m)*sum(y_pred - y), d_theta1 = (1/m)*sum((y_pred - y)*X)
+   - Update: theta0 = theta0 - alpha * d_theta0, theta1 = theta1 - alpha * d_theta1
+Step 7: Compute Mean Squared Error (MSE) and R² score for Gradient Descent.
+
+Method 2: Linear Regression using Normal Equation
+Step 1: Add a bias column of ones to feature matrix X: X_normal = [1, X].
+Step 2: Compute parameters analytically: theta = inv(X_normal.T @ X_normal) @ X_normal.T @ y.
+Step 3: Predict housing prices: y_pred_ne = X_normal @ theta.
+Step 4: Compute MSE and R² score for Normal Equation.
+Step 5: Plot actual data scatter and fitted regression line. Save plot to linear_plot.png.
+
+SAMPLE OUTPUT / METRICS:
+--- Gradient Descent Results ---
+Intercept (theta0): 2.0686
+Slope (theta1):     0.3182
+MSE:                1.2789
+R2 Score:           0.0238
+
+--- Normal Equation Results ---
+Theta Values (Intercept, Slope): [1.7495, 0.0676]
+MSE:                             1.2783
+R2 Score:                        0.0243
+
+Plot saved successfully to 'linear_plot.png'.
+

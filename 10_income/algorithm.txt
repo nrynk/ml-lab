@@ -1,0 +1,25 @@
+================================================================================
+Experiment 10: Implement and Compare Logistic Regression and Decision Trees on Adult Income Dataset
+================================================================================
+
+AIM:
+Implement and compare Logistic Regression and Decision Trees on the Adult Income dataset for predicting income levels (>50K vs <=50K). Evaluate both models based on performance metrics and interpretability.
+
+ALGORITHM / PROCEDURE:
+Step 1: Load Adult Income dataset ('adult.csv').
+Step 2: Handle missing values ('?' -> NaN -> dropna).
+Step 3: Encode categorical variables using LabelEncoder.
+Step 4: Split into 80% training and 20% testing sets.
+Step 5: Train Logistic Regression model (max_iter=1000).
+Step 6: Train Decision Tree model (criterion='entropy', max_depth=5).
+Step 7: Evaluate both models using Accuracy, Precision, Recall, and F1-score.
+Step 8: Compare models and analyze linear vs hierarchical decision-making interpretability.
+
+SAMPLE OUTPUT / METRICS:
+--- Performance Comparison: Logistic Regression vs Decision Tree ---
+   Metric  Logistic Regression  Decision Tree (depth=5)
+ Accuracy               0.8241                   0.8512
+Precision               0.7214                   0.7845
+   Recall               0.4632                   0.5341
+ F1 Score               0.5641                   0.6354
+

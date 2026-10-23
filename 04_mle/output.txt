@@ -1,0 +1,5 @@
+--- Parameter Estimation Performance Comparison ---
+       Estimation Method  Accuracy  Precision   Recall  F1 Score
+     MLE (Unregularized)  0.956140   0.971831 0.958333  0.965035
+MAP (L2 - Gaussian Prior)  0.973684   0.972222 0.985915  0.979021
+ MAP (L1 - Laplace Prior)  0.964912   0.971831 0.971831  0.971831

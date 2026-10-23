@@ -1,0 +1,4 @@
+--- Naive Bayes Classifier Comparison ---
+                  Model       Feature Representation  Accuracy  F1 Score (Weighted)
+Multinomial Naive Bayes    Word Frequencies (Counts)    0.7852               0.7781
+  Bernoulli Naive Bayes   Binary Word Presence (0/1)    0.6934               0.6845

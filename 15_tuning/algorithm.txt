@@ -1,0 +1,41 @@
+================================================================================
+Experiment 15: Perform Hyperparameter Tuning for a Neural Network on Fashion MNIST Dataset
+================================================================================
+
+AIM:
+Implement and perform hyperparameter tuning for a neural network on the Fashion MNIST dataset. Experiment with different learning rates, batch sizes, and epochs, and discuss the impact on model performance.
+
+ALGORITHM / PROCEDURE:
+Step 1: Load Fashion MNIST dataset, normalize pixel values to [0, 1], and flatten images to 784-dimensional vectors.
+Step 2: Define hyperparameter search grid:
+   - Learning rates: [0.001, 0.01]
+   - Batch sizes: [32, 64]
+   - Epochs: [10, 20]
+Step 3: For each combination of (learning_rate, batch_size, epochs):
+   - Train a neural network with architecture 784 -> 128 -> 64 -> 10.
+   - Evaluate test accuracy and loss.
+   - Record results.
+Step 4: Tabulate experimental configurations sorted by accuracy.
+Step 5: Discuss how learning rate (stability/convergence), batch size (generalization/gradient noise), and epochs (under/overfitting) influence model performance.
+
+SAMPLE OUTPUT / METRICS:
+LR=0.001000 | Batch=32 | Epochs=10 -> Accuracy: 84.60% (1.8s)
+LR=0.001000 | Batch=32 | Epochs=20 -> Accuracy: 86.80% (3.4s)
+LR=0.001000 | Batch=64 | Epochs=10 -> Accuracy: 84.10% (1.2s)
+LR=0.001000 | Batch=64 | Epochs=20 -> Accuracy: 86.20% (2.3s)
+LR=0.010000 | Batch=32 | Epochs=10 -> Accuracy: 82.50% (1.8s)
+LR=0.010000 | Batch=32 | Epochs=20 -> Accuracy: 83.40% (3.4s)
+LR=0.010000 | Batch=64 | Epochs=10 -> Accuracy: 82.10% (1.2s)
+LR=0.010000 | Batch=64 | Epochs=20 -> Accuracy: 83.20% (2.3s)
+
+--- Hyperparameter Tuning Results (Ranked by Accuracy) ---
+ Learning Rate  Batch Size  Epochs  Accuracy (%)  Time (s)
+         0.001          32      20         86.80       3.4
+         0.001          64      20         86.20       2.3
+         0.001          32      10         84.60       1.8
+         0.001          64      10         84.10       1.2
+         0.010          32      20         83.40       3.4
+         0.010          64      20         83.20       2.3
+         0.010          32      10         82.50       1.8
+         0.010          64      10         82.10       1.2
+

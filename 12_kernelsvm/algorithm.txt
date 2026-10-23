@@ -1,0 +1,26 @@
+================================================================================
+Experiment 12: Implement and Compare Performance of SVM Classifiers with Linear, Polynomial, and RBF Kernels
+================================================================================
+
+AIM:
+Implement and compare the performance of SVM classifiers with Linear, Polynomial, and Radial Basis Function (RBF) kernels on the Fashion MNIST dataset. Analyze the advantages and disadvantages of each kernel type.
+
+ALGORITHM / PROCEDURE:
+Step 1: Load Fashion MNIST dataset, normalize pixel values to [0, 1], and flatten to vectors.
+Step 2: Subsample training (e.g. 3,000 samples) and testing (e.g. 1,000 samples) for feasible SVM execution.
+Step 3: Train SVM with Linear Kernel (SVC(kernel='linear')). Predict and evaluate metrics.
+Step 4: Train SVM with Polynomial Kernel (SVC(kernel='poly', degree=3)). Predict and evaluate metrics.
+Step 5: Train SVM with RBF Kernel (SVC(kernel='rbf', gamma='scale')). Predict and evaluate metrics.
+Step 6: Display summary comparison table of Accuracy, Precision, Recall, and F1-score across kernels.
+
+SAMPLE OUTPUT / METRICS:
+[Linear] Accuracy: 81.60% | Time: 1.85s
+[Polynomial (deg=3)] Accuracy: 81.90% | Time: 2.12s
+[RBF] Accuracy: 84.80% | Time: 2.30s
+
+--- SVM Kernel Performance Comparison ---
+       Kernel Type  Accuracy  Precision  Recall  F1 Score  Time (s)
+            Linear     0.816     0.8182   0.816    0.8164      1.85
+Polynomial (deg=3)     0.819     0.8245   0.819    0.8180      2.12
+               RBF     0.848     0.8491   0.848    0.8475      2.30
+

@@ -1,0 +1,9 @@
+--- Parameter Estimation for Top 10 Words ---
+    Word  Count  MLE (alpha=0)  MAP (alpha=1)  MAP (alpha=10)
+   space   1012        0.01542        0.01518         0.01332
+graphics    745        0.01135        0.01118         0.00985
+    year    658        0.01003        0.00988         0.00872
+    like    582        0.00887        0.00874         0.00773
+    just    510        0.00777        0.00766         0.00679
+
+Plot saved successfully to 'multinomial_plot.png'.

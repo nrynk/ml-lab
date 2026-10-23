@@ -1,0 +1,6 @@
+--- Performance Comparison: Impact of Feature Scaling ---
+   Metric  Without Scaling  With Scaling
+ Accuracy           0.7662        0.7727
+Precision           0.6863        0.6939
+   Recall           0.6364        0.6182
+ F1 Score           0.6604        0.6538

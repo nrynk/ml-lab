@@ -1,0 +1,16 @@
+Training MLP architectures on Wine Quality dataset...
+Architecture: (10,)           | Accuracy: 58.12%
+Architecture: (20,)           | Accuracy: 61.25%
+Architecture: (30,)           | Accuracy: 62.50%
+Architecture: (20, 10)        | Accuracy: 62.19%
+Architecture: (30, 20)        | Accuracy: 63.75%
+Architecture: (50, 30, 10)    | Accuracy: 64.69%
+
+--- MLP Architectural Performance Comparison ---
+Hidden Layers  Accuracy
+        (10,)    0.5812
+        (20,)    0.6125
+        (30,)    0.6250
+     (20, 10)    0.6219
+     (30, 20)    0.6375
+ (50, 30, 10)    0.6469

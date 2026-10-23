@@ -1,0 +1,29 @@
+================================================================================
+Experiment 14: Neural Network using Different Activation Functions on MNIST Dataset
+================================================================================
+
+AIM:
+Implement and compare the performance of a neural network using different activation functions (Sigmoid, ReLU, Tanh) on the MNIST dataset. Analyze how each activation function affects the training process and classification accuracy.
+
+ALGORITHM / PROCEDURE:
+Step 1: Load MNIST digits dataset, normalize pixels to [0, 1], and flatten images into 784-dimensional vectors.
+Step 2: One-hot encode digit labels (0-9).
+Step 3: Build feed-forward neural network architecture: Input(784) -> Hidden1(128) -> Hidden2(64) -> Output(10).
+Step 4: For each activation function in ['sigmoid', 'relu', 'tanh']:
+   - Set hidden layer activations.
+   - Train the network and record total training time.
+   - Evaluate test accuracy and loss.
+Step 5: Compare convergence speed and accuracy across activation functions.
+
+SAMPLE OUTPUT / METRICS:
+Training Neural Networks with Different Activations:
+Activation: Sigmoid (logistic)   | Accuracy: 96.67% | Training Time: 0.85s
+Activation: ReLU                 | Accuracy: 97.78% | Training Time: 0.65s
+Activation: Tanh                 | Accuracy: 97.50% | Training Time: 0.70s
+
+--- Activation Function Comparison Summary ---
+Activation Function  Test Accuracy  Training Time (s)
+ Sigmoid (logistic)         0.9667               0.85
+               ReLU         0.9778               0.65
+               Tanh         0.9750               0.70
+

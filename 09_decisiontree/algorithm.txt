@@ -1,0 +1,26 @@
+================================================================================
+Experiment 9: Decision Tree Classifier using ID3 Algorithm for Customer Segmentation
+================================================================================
+
+AIM:
+Implement a Decision Tree classifier using the ID3 algorithm (entropy criterion) to segment customers based on their purchasing behavior using the Online Retail dataset. Analyze the tree structure and discuss feature importance.
+
+ALGORITHM / PROCEDURE:
+Step 1: Load Online Retail dataset or generate customer aggregated purchasing data.
+Step 2: Aggregate by CustomerID to compute TotalQuantity, TotalSpending, PurchaseFrequency.
+Step 3: Segment customers into 3 quantiles: Low, Medium, High spending.
+Step 4: Encode target classes with LabelEncoder. Split into 80% train and 20% test sets.
+Step 5: Train DecisionTreeClassifier with criterion='entropy' (ID3 algorithm) and max_depth=3.
+Step 6: Evaluate test accuracy and feature importances.
+Step 7: Plot decision tree diagram and save to decisiontree_plot.png.
+
+SAMPLE OUTPUT / METRICS:
+ID3 Decision Tree Accuracy: 99.00%
+
+--- Feature Importances ---
+  TotalQuantity       : 0.1420
+  TotalSpending       : 0.8580
+  PurchaseFrequency   : 0.0000
+
+Tree plot saved successfully to 'decisiontree_plot.png'.
+

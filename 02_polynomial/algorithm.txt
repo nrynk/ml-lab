@@ -1,0 +1,36 @@
+================================================================================
+Experiment 2: Polynomial Regression on the Auto MPG Dataset
+================================================================================
+
+AIM:
+To implement Polynomial Regression on the Auto MPG dataset for predicting Miles Per Gallon (MPG) based on Engine Displacement and compare its performance with Linear Regression.
+
+ALGORITHM / PROCEDURE:
+Step 1: Load the Auto MPG dataset. Clean missing values and extract 'displacement' as feature X and 'mpg' as target y.
+Step 2: Train a standard Linear Regression model on feature X and compute baseline MSE and R² score.
+Step 3: For polynomial degrees 2, 3, and 4:
+   - Transform feature X into polynomial features using PolynomialFeatures(degree).
+   - Fit a LinearRegression model on the transformed features.
+   - Predict MPG and calculate MSE and R² score for each degree.
+Step 4: Compare linear regression performance with polynomial regression across degrees.
+Step 5: Plot actual data scatter and smooth fitted curves for linear and polynomial models. Save to polynomial_plot.png.
+
+SAMPLE OUTPUT / METRICS:
+--- Linear Regression ---
+MSE:      21.4490
+R2 Score: 0.6482
+
+Polynomial Degree = 2
+MSE:      19.0681
+R2 Score: 0.6872
+
+Polynomial Degree = 3
+MSE:      18.9958
+R2 Score: 0.6884
+
+Polynomial Degree = 4
+MSE:      18.8471
+R2 Score: 0.6908
+
+Plot saved successfully to 'polynomial_plot.png'.
+
